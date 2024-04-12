@@ -294,7 +294,7 @@
     # Compile Blocknotify
     echo -e "Compiling Blocknotify"
     cd ~
-    hide_output git clone https://github.com/saltpool/yiimp.git
+    hide_output git clone https://github.com/soulistyces/yiimp8.2
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     hide_output make -j$((`nproc`+1))
